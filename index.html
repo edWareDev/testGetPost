@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>TEST CONNECTION</title>
+</head>
+
+<body>
+    <main>
+        <form method="post" class="form">
+            <div class="type">
+                <label for="type"> Type: </label>
+                <select id="type" name="select">
+                    <option value="http" selected>http</option>
+                    <option value="https">https</option>
+                </select>
+            </div>
+            <div class="host">
+                <label for="host"> Host: </label>
+                <input type="text" name="host" id="host">
+            </div>
+            <div class="method">
+                <label for="method"> Method: </label>
+                <select id="method" name="select">
+                    <option value="GET" selected>Get</option>
+                    <option value="POST">Post</option>
+                </select>
+            </div>
+            <button>Enviar</button>
+        </form>
+        <div class="resp">
+            <div class="loader">
+                <div class="newtons-cradle">
+                    <div class="newtons-cradle__dot"></div>
+                    <div class="newtons-cradle__dot"></div>
+                    <div class="newtons-cradle__dot"></div>
+                    <div class="newtons-cradle__dot"></div>
+                </div>
+            </div>
+            <div class="container invisible">
+                <h2>Resultado:</h2>
+                <p>Esperando Respuesta</p>
+            </div>
+        </div>
+    </main>
+    <script src="./script.js"></script>
+</body>
+
+</html>
